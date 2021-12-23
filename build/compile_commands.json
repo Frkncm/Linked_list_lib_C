@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/furkan/Cpp_workout/llist_test/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/furkan/Cpp_workout/llist_test/build -I/home/furkan/Cpp_workout/llist_test -I/home/furkan/Cpp_workout/llist_test/gtest_gmock -I/home/furkan/Cpp_workout/llist_test/llist_lib -I/home/furkan/Cpp_workout/llist_test/tests  -g   -std=gnu++17 -o CMakeFiles/linked_list_prj.dir/main.cpp.o -c /home/furkan/Cpp_workout/llist_test/main.cpp",
+  "file": "/home/furkan/Cpp_workout/llist_test/main.cpp"
+},
+{
+  "directory": "/home/furkan/Cpp_workout/llist_test/build",
+  "command": "/bin/x86_64-linux-gnu-gcc-9  -I/home/furkan/Cpp_workout/llist_test/build -I/home/furkan/Cpp_workout/llist_test -I/home/furkan/Cpp_workout/llist_test/gtest_gmock -I/home/furkan/Cpp_workout/llist_test/llist_lib -I/home/furkan/Cpp_workout/llist_test/tests  -g   -o CMakeFiles/linked_list_prj.dir/llist_lib/llist.c.o   -c /home/furkan/Cpp_workout/llist_test/llist_lib/llist.c",
+  "file": "/home/furkan/Cpp_workout/llist_test/llist_lib/llist.c"
+},
+{
+  "directory": "/home/furkan/Cpp_workout/llist_test/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/furkan/Cpp_workout/llist_test/build -I/home/furkan/Cpp_workout/llist_test -I/home/furkan/Cpp_workout/llist_test/gtest_gmock -I/home/furkan/Cpp_workout/llist_test/llist_lib -I/home/furkan/Cpp_workout/llist_test/tests  -g   -std=gnu++17 -o CMakeFiles/linked_list_prj.dir/tests/test1.cpp.o -c /home/furkan/Cpp_workout/llist_test/tests/test1.cpp",
+  "file": "/home/furkan/Cpp_workout/llist_test/tests/test1.cpp"
+},
+{
+  "directory": "/home/furkan/Cpp_workout/llist_test/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/furkan/Cpp_workout/llist_test/build -I/home/furkan/Cpp_workout/llist_test -I/home/furkan/Cpp_workout/llist_test/gtest_gmock -I/home/furkan/Cpp_workout/llist_test/llist_lib -I/home/furkan/Cpp_workout/llist_test/tests  -g   -std=gnu++17 -o CMakeFiles/linked_list_prj.dir/gtest_gmock/gmock-gtest-all.cc.o -c /home/furkan/Cpp_workout/llist_test/gtest_gmock/gmock-gtest-all.cc",
+  "file": "/home/furkan/Cpp_workout/llist_test/gtest_gmock/gmock-gtest-all.cc"
+}
+]

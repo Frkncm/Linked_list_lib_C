@@ -1,0 +1,3 @@
+/home/furkan/Cpp_workout/llist_test/build/CMakeFiles/rebuild_cache.dir
+/home/furkan/Cpp_workout/llist_test/build/CMakeFiles/edit_cache.dir
+/home/furkan/Cpp_workout/llist_test/build/CMakeFiles/linked_list_prj.dir
