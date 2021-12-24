@@ -72,3 +72,13 @@ TEST_F(llist_test2, check_insert_after_index)
 
     EXPECT_EQ(list_get(l_list, 4), 55);
 }
+
+TEST_F(llist_test2, check_insert_after_index_weirdvalues)
+{
+    list_pushBack(&l_list, 5);
+    list_pushBack(&l_list, 2);
+    list_pushBack(&l_list, 11);
+
+    EXPECT_FALSE(list_insertAfterIndex(l_list, 55, 5));
+
+}
