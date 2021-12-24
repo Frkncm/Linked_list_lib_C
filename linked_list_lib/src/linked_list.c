@@ -144,10 +144,13 @@ void list_free(list **lst)
    *lst = NULL;
 }
 
-void list_to_array(list *lst, int *arr)
+bool list_to_array(list *lst, int *arr, int arr_size)
 {
    if (lst->list_node == NULL)
-      return;
+      return false;
+
+   if(arr_size < lst->size)
+      return false;
 
    node *current_node = lst->list_node;
    int indx = 0;
@@ -157,4 +160,5 @@ void list_to_array(list *lst, int *arr)
       arr[indx++] = current_node->value;
       current_node = current_node->next;
    }
+   return true;
 }

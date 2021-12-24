@@ -1,6 +1,8 @@
 #ifndef _LINKED_LIST_H_
 #define _LINKED_LIST_H_
 
+#include "stdbool.h"
+
 // Interface
 
 #define CREATE_LIST(list_name)   \
@@ -40,6 +42,6 @@ int list_popFront(node **list);
 
 void list_free(list **lst);
 
-void list_to_array(list *lst, int *arr);
+bool list_to_array(list *lst, int *arr, int arr_size);
 
 #endif //_LINKED_LIST_H_
