@@ -78,7 +78,23 @@ TEST_F(llist_test2, check_insert_after_index_weirdvalues)
     list_pushBack(&l_list, 5);
     list_pushBack(&l_list, 2);
     list_pushBack(&l_list, 11);
-
     EXPECT_FALSE(list_insertAfterIndex(l_list, 55, 5));
+
+}
+
+TEST_F(llist_test2, check_push_front)
+{
+    list_pushBack(&l_list, 5);
+    list_pushBack(&l_list, 2);
+    list_pushBack(&l_list, 11);
+
+    EXPECT_TRUE(list_pushFront(&l_list, 66));
+
+    EXPECT_EQ(list_get(l_list, 1), 66);
+    EXPECT_EQ(list_get(l_list, 2), 5);
+    EXPECT_EQ(list_get(l_list, 3), 2);
+    EXPECT_EQ(list_get(l_list, 4), 11);
+
+    EXPECT_TRUE(list_get(l_list, 5) == -1);
 
 }

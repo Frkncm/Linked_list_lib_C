@@ -34,7 +34,7 @@ int list_popBack(list **lst);
 
 int list_get(list *lst, int index);
 
-void list_pushFront(node **list, int value);
+bool list_pushFront(list **lst, int value);
 
 bool list_insertAfterIndex(list *lst, int value, int index);
 

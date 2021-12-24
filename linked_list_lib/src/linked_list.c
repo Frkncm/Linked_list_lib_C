@@ -43,8 +43,11 @@ void list_pushBack(list **lst, int value)
 
 int list_popBack(list **lst)
 {
+   if ((*lst) == NULL)
+      return -1;
+
    if ((*lst)->list_node == NULL)
-      return 0; // the list has not any instance
+      return -1; // the list has not any instance
 
    int temp;
 
@@ -132,9 +135,21 @@ bool list_insertAfterIndex(list *lst, int value, int index)
    return true;
 }
 
-void list_pushFront(node **list, int value)
+bool list_pushFront(list **lst, int value)
 {
-   *list = node_create(value, *list);
+   if ((*lst) == NULL)
+   {
+      (*lst) = list_create(value, NULL);
+      (*lst)->size++;
+      return true;
+   }
+   else if ((*lst)->list_node != NULL)
+   {
+      (*lst)->list_node = node_create(value, (*lst)->list_node);
+      (*lst)->size++;
+      return true;
+   }
+   return false;
 }
 
 int list_popFront(list **lst)
