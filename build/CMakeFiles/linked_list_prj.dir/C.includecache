@@ -6,15 +6,3 @@
 
 #IncludeRegexTransform: 
 
-../linked_list_lib/inc/linked_list.h
-stdbool.h
-../linked_list_lib/inc/stdbool.h
-
-/home/furkan/Cpp_workout/llist_test/linked_list_lib/src/linked_list.c
-stdio.h
--
-stdlib.h
--
-linked_list.h
-/home/furkan/Cpp_workout/llist_test/linked_list_lib/src/linked_list.h
-

@@ -82,12 +82,16 @@ int list_popBack(list **lst)
    return temp;
 }
 
-static node *get_node(node *list, int index)
+static node *get_node(list *lst, int index)
 {
    // We need to create a linear search mechanism
+
+   if (lst->size < index)
+      return NULL;
+
    int i = 0;
 
-   node *current_node = list;
+   node *current_node = (lst)->list_node;
 
    for (i = 0; i < index - 1; i++)
    {
@@ -97,9 +101,35 @@ static node *get_node(node *list, int index)
    return current_node;
 }
 
-int list_get(node *list, int index)
+int list_get(list *lst, int index)
 {
-   return get_node(list, index)->value;
+   node *temp_node = get_node(lst, index);
+
+   if (temp_node != NULL)
+      return temp_node->value;
+   else
+      return -1;
+}
+
+bool list_insertAfterIndex(list *lst, int value, int index)
+{
+   if (lst == NULL)
+      return false;
+
+   if (lst->list_node == NULL)
+      return false;
+
+   node *prev_node = get_node(lst, index);
+
+   if (prev_node == NULL)
+      return false;
+
+   node *intended_node = node_create(value, prev_node->next);
+   prev_node->next = intended_node;
+
+   lst->size++;
+
+   return true;
 }
 
 void list_pushFront(node **list, int value)
@@ -107,21 +137,21 @@ void list_pushFront(node **list, int value)
    *list = node_create(value, *list);
 }
 
-void list_insertAfterIndex(node *list, int value, int index)
+int list_popFront(list **lst)
 {
-   node *prev_node = get_node(list, index);
+   if ((*lst) == NULL)
+      return -1;
 
-   node *intended_node = node_create(value, prev_node->next);
-   prev_node->next = intended_node;
-}
+   if ((*lst)->list_node == NULL)
+      return -1;
 
-int list_popFront(node **list)
-{
-   node *header = *list;
+   node *header = (*lst)->list_node;
 
-   int temp = (*list)->value;
+   (*lst)->size--;
 
-   *list = (*list)->next;
+   int temp = (*lst)->list_node->value;
+
+   (*lst)->list_node = (*lst)->list_node->next;
    free(header);
 
    return temp;
@@ -149,7 +179,7 @@ bool list_to_array(list *lst, int *arr, int arr_size)
    if (lst->list_node == NULL)
       return false;
 
-   if(arr_size < lst->size)
+   if (arr_size < lst->size)
       return false;
 
    node *current_node = lst->list_node;

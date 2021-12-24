@@ -5,8 +5,8 @@
 
 // Interface
 
-#define CREATE_LIST(list_name)   \
-    list *list_name = NULL;      \
+#define CREATE_LIST(list_name) \
+    list *list_name = NULL;
 
 typedef struct element node; // Forward decleration
 
@@ -32,13 +32,13 @@ void list_pushBack(list **lst, int value);
 
 int list_popBack(list **lst);
 
-int list_get(node *list, int index);
+int list_get(list *lst, int index);
 
 void list_pushFront(node **list, int value);
 
-void list_insertAfterIndex(node *list, int value, int index);
+bool list_insertAfterIndex(list *lst, int value, int index);
 
-int list_popFront(node **list);
+int list_popFront(list **lst);
 
 void list_free(list **lst);
 
