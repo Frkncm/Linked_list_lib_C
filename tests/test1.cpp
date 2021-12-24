@@ -18,7 +18,7 @@ struct llist_test : public ::testing::Test
 TEST_F(llist_test, is_list_created)
 {
     CREATE_LIST(l_list);
-    EXPECT_TRUE(l_list->list_node == NULL);
+    EXPECT_TRUE(l_list == NULL);
     
     list_free(&l_list);
 }
@@ -65,7 +65,7 @@ TEST_F(llist_test, check_list_free)
 
     list_free(&l_list);
 
-    EXPECT_TRUE(l_list->list_node == NULL);
+    EXPECT_TRUE(l_list == NULL);
 
     list_pushBack(&l_list, 22);
     EXPECT_EQ(list_popBack(&l_list), 22);

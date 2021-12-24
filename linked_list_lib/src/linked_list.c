@@ -2,7 +2,16 @@
 #include <stdlib.h>
 #include "linked_list.h"
 
-node *list_ctor(int value, void *next_node)
+list *list_create(int value, void *next_node)
+{
+   list *temp_list = (list *)malloc(sizeof(list));
+   temp_list->list_node = node_create(value, next_node);
+
+   temp_list->size = 1;
+   return temp_list;
+}
+
+node *node_create(int value, void *next_node)
 {
    node *list = (node *)malloc(sizeof(node));
 
@@ -13,10 +22,9 @@ node *list_ctor(int value, void *next_node)
 
 void list_pushBack(list **lst, int value)
 {
-   if ((*lst)->list_node == NULL)
+   if ((*lst) == NULL)
    {
-      (*lst)->list_node = list_ctor(value, NULL);
-      (*lst)->size = 1;
+      (*lst) = list_create(value, NULL);
    }
    else
    {
@@ -27,7 +35,7 @@ void list_pushBack(list **lst, int value)
          current_node = current_node->next;
       }
 
-      current_node->next = list_ctor(value, NULL);
+      current_node->next = node_create(value, NULL);
       current_node->next->next = NULL;
       (*lst)->size++;
    }
@@ -96,14 +104,14 @@ int list_get(node *list, int index)
 
 void list_pushFront(node **list, int value)
 {
-   *list = list_ctor(value, *list);
+   *list = node_create(value, *list);
 }
 
 void list_insertAfterIndex(node *list, int value, int index)
 {
    node *prev_node = get_node(list, index);
 
-   node *intended_node = list_ctor(value, prev_node->next);
+   node *intended_node = node_create(value, prev_node->next);
    prev_node->next = intended_node;
 }
 
@@ -121,7 +129,7 @@ int list_popFront(node **list)
 
 void list_free(list **lst)
 {
-   if((*lst)->list_node == NULL)
+   if ((*lst) == NULL)
       return;
 
    node *next;
@@ -132,6 +140,8 @@ void list_free(list **lst)
       free((*lst)->list_node);
       (*lst)->list_node = next;
    }
+
+   *lst = NULL;
 }
 
 void list_to_array(list *lst, int *arr)

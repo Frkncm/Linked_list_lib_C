@@ -4,8 +4,7 @@
 // Interface
 
 #define CREATE_LIST(list_name)   \
-    list *list_name;             \
-    list_name->list_node = NULL
+    list *list_name = NULL;      \
 
 typedef struct element node; // Forward decleration
 
@@ -21,7 +20,11 @@ typedef struct list
     int size;
 } list;
 
-node *list_ctor(int value, void *next_node);
+void *list_ctor(list **lst);
+
+list *list_create(int value, void *next_node);
+
+node *node_create(int value, void *next_node);
 
 void list_pushBack(list **lst, int value);
 
