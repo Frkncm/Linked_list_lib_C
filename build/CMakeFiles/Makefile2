@@ -74,12 +74,12 @@ clean: CMakeFiles/linked_list_prj.dir/clean
 CMakeFiles/linked_list_prj.dir/all:
 	$(MAKE) -f CMakeFiles/linked_list_prj.dir/build.make CMakeFiles/linked_list_prj.dir/depend
 	$(MAKE) -f CMakeFiles/linked_list_prj.dir/build.make CMakeFiles/linked_list_prj.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/furkan/Cpp_workout/llist_test/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target linked_list_prj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/furkan/Cpp_workout/llist_test/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target linked_list_prj"
 .PHONY : CMakeFiles/linked_list_prj.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/linked_list_prj.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/furkan/Cpp_workout/llist_test/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/furkan/Cpp_workout/llist_test/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/linked_list_prj.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/furkan/Cpp_workout/llist_test/build/CMakeFiles 0
 .PHONY : CMakeFiles/linked_list_prj.dir/rule

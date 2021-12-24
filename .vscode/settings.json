@@ -15,6 +15,7 @@
         "utility": "c",
         "variant": "c",
         "llist.h": "c",
-        "list": "cpp"
+        "list": "cpp",
+        "linked_list.h": "c"
     }
 }

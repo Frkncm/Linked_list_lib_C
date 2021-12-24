@@ -7,11 +7,11 @@ C_FLAGS = -g
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/furkan/Cpp_workout/llist_test/build -I/home/furkan/Cpp_workout/llist_test -I/home/furkan/Cpp_workout/llist_test/gtest_gmock -I/home/furkan/Cpp_workout/llist_test/llist_lib -I/home/furkan/Cpp_workout/llist_test/tests 
+C_INCLUDES = -I/home/furkan/Cpp_workout/llist_test/build -I/home/furkan/Cpp_workout/llist_test -I/home/furkan/Cpp_workout/llist_test/gtest_gmock -I/home/furkan/Cpp_workout/llist_test/linked_list_lib -I/home/furkan/Cpp_workout/llist_test/linked_list_lib/inc -I/home/furkan/Cpp_workout/llist_test/linked_list_lib/src -I/home/furkan/Cpp_workout/llist_test/tests 
 
 CXX_FLAGS = -g   -std=gnu++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/furkan/Cpp_workout/llist_test/build -I/home/furkan/Cpp_workout/llist_test -I/home/furkan/Cpp_workout/llist_test/gtest_gmock -I/home/furkan/Cpp_workout/llist_test/llist_lib -I/home/furkan/Cpp_workout/llist_test/tests 
+CXX_INCLUDES = -I/home/furkan/Cpp_workout/llist_test/build -I/home/furkan/Cpp_workout/llist_test -I/home/furkan/Cpp_workout/llist_test/gtest_gmock -I/home/furkan/Cpp_workout/llist_test/linked_list_lib -I/home/furkan/Cpp_workout/llist_test/linked_list_lib/inc -I/home/furkan/Cpp_workout/llist_test/linked_list_lib/src -I/home/furkan/Cpp_workout/llist_test/tests 
 

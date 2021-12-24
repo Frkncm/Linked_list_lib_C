@@ -6,13 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/home/furkan/Cpp_workout/llist_test/llist_lib/llist.c
-stdio.h
--
-stdlib.h
--
-llist.h
-/home/furkan/Cpp_workout/llist_test/llist_lib/llist.h
-
-/home/furkan/Cpp_workout/llist_test/llist_lib/llist.h
-

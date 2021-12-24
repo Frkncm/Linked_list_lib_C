@@ -12,14 +12,17 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(gtest_gmock)
-include_directories(llist_lib)
+include_directories(linked_list_lib)
+include_directories(linked_list_lib/inc)
+include_directories(linked_list_lib/src)
 include_directories(tests)
 
 add_executable(linked_list_prj
     main.cpp
-    llist_lib/llist.h
-    llist_lib/llist.c
+    linked_list_lib/inc/linked_list.h
+    linked_list_lib/src/linked_list.c
     tests/test1.cpp
+    tests/test2.cpp
     gtest_gmock/gmock/gmock.h
   	gtest_gmock/gtest/gtest.h
   	gtest_gmock/gmock-gtest-all.cc

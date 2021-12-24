@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/furkan/Cpp_workout/llist_test/llist_lib/llist.c" "/home/furkan/Cpp_workout/llist_test/build/CMakeFiles/linked_list_prj.dir/llist_lib/llist.c.o"
+  "/home/furkan/Cpp_workout/llist_test/linked_list_lib/src/linked_list.c" "/home/furkan/Cpp_workout/llist_test/build/CMakeFiles/linked_list_prj.dir/linked_list_lib/src/linked_list.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -14,13 +14,16 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "."
   "../"
   "../gtest_gmock"
-  "../llist_lib"
+  "../linked_list_lib"
+  "../linked_list_lib/inc"
+  "../linked_list_lib/src"
   "../tests"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/furkan/Cpp_workout/llist_test/gtest_gmock/gmock-gtest-all.cc" "/home/furkan/Cpp_workout/llist_test/build/CMakeFiles/linked_list_prj.dir/gtest_gmock/gmock-gtest-all.cc.o"
   "/home/furkan/Cpp_workout/llist_test/main.cpp" "/home/furkan/Cpp_workout/llist_test/build/CMakeFiles/linked_list_prj.dir/main.cpp.o"
   "/home/furkan/Cpp_workout/llist_test/tests/test1.cpp" "/home/furkan/Cpp_workout/llist_test/build/CMakeFiles/linked_list_prj.dir/tests/test1.cpp.o"
+  "/home/furkan/Cpp_workout/llist_test/tests/test2.cpp" "/home/furkan/Cpp_workout/llist_test/build/CMakeFiles/linked_list_prj.dir/tests/test2.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -29,7 +32,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "."
   "../"
   "../gtest_gmock"
-  "../llist_lib"
+  "../linked_list_lib"
+  "../linked_list_lib/inc"
+  "../linked_list_lib/src"
   "../tests"
   )
 

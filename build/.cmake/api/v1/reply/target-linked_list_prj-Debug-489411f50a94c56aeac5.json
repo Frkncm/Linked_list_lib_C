@@ -25,7 +25,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 18,
+				"line" : 20,
 				"parent" : 0
 			},
 			{
@@ -44,6 +44,18 @@
 				"command" : 1,
 				"file" : 0,
 				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 18,
 				"parent" : 0
 			}
 		]
@@ -74,10 +86,18 @@
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/home/furkan/Cpp_workout/llist_test/llist_lib"
+					"path" : "/home/furkan/Cpp_workout/llist_test/linked_list_lib"
 				},
 				{
 					"backtrace" : 4,
+					"path" : "/home/furkan/Cpp_workout/llist_test/linked_list_lib/inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/furkan/Cpp_workout/llist_test/linked_list_lib/src"
+				},
+				{
+					"backtrace" : 6,
 					"path" : "/home/furkan/Cpp_workout/llist_test/tests"
 				}
 			],
@@ -86,7 +106,8 @@
 			[
 				0,
 				3,
-				6
+				4,
+				7
 			]
 		},
 		{
@@ -110,10 +131,18 @@
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/home/furkan/Cpp_workout/llist_test/llist_lib"
+					"path" : "/home/furkan/Cpp_workout/llist_test/linked_list_lib"
 				},
 				{
 					"backtrace" : 4,
+					"path" : "/home/furkan/Cpp_workout/llist_test/linked_list_lib/inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/furkan/Cpp_workout/llist_test/linked_list_lib/src"
+				},
+				{
+					"backtrace" : 6,
 					"path" : "/home/furkan/Cpp_workout/llist_test/tests"
 				}
 			],
@@ -160,7 +189,8 @@
 				0,
 				2,
 				3,
-				6
+				4,
+				7
 			]
 		},
 		{
@@ -168,8 +198,8 @@
 			"sourceIndexes" : 
 			[
 				1,
-				4,
-				5
+				5,
+				6
 			]
 		}
 	],
@@ -183,19 +213,25 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "llist_lib/llist.h",
+			"path" : "linked_list_lib/inc/linked_list.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 1,
-			"path" : "llist_lib/llist.c",
+			"path" : "linked_list_lib/src/linked_list.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "tests/test1.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tests/test2.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

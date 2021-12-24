@@ -70,18 +70,18 @@ CMakeFiles/linked_list_prj.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linked_list_prj.dir/main.cpp.s"
 	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/furkan/Cpp_workout/llist_test/main.cpp -o CMakeFiles/linked_list_prj.dir/main.cpp.s
 
-CMakeFiles/linked_list_prj.dir/llist_lib/llist.c.o: CMakeFiles/linked_list_prj.dir/flags.make
-CMakeFiles/linked_list_prj.dir/llist_lib/llist.c.o: ../llist_lib/llist.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/furkan/Cpp_workout/llist_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/linked_list_prj.dir/llist_lib/llist.c.o"
-	/bin/x86_64-linux-gnu-gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/linked_list_prj.dir/llist_lib/llist.c.o   -c /home/furkan/Cpp_workout/llist_test/llist_lib/llist.c
+CMakeFiles/linked_list_prj.dir/linked_list_lib/src/linked_list.c.o: CMakeFiles/linked_list_prj.dir/flags.make
+CMakeFiles/linked_list_prj.dir/linked_list_lib/src/linked_list.c.o: ../linked_list_lib/src/linked_list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/furkan/Cpp_workout/llist_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/linked_list_prj.dir/linked_list_lib/src/linked_list.c.o"
+	/bin/x86_64-linux-gnu-gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/linked_list_prj.dir/linked_list_lib/src/linked_list.c.o   -c /home/furkan/Cpp_workout/llist_test/linked_list_lib/src/linked_list.c
 
-CMakeFiles/linked_list_prj.dir/llist_lib/llist.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/linked_list_prj.dir/llist_lib/llist.c.i"
-	/bin/x86_64-linux-gnu-gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/furkan/Cpp_workout/llist_test/llist_lib/llist.c > CMakeFiles/linked_list_prj.dir/llist_lib/llist.c.i
+CMakeFiles/linked_list_prj.dir/linked_list_lib/src/linked_list.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/linked_list_prj.dir/linked_list_lib/src/linked_list.c.i"
+	/bin/x86_64-linux-gnu-gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/furkan/Cpp_workout/llist_test/linked_list_lib/src/linked_list.c > CMakeFiles/linked_list_prj.dir/linked_list_lib/src/linked_list.c.i
 
-CMakeFiles/linked_list_prj.dir/llist_lib/llist.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/linked_list_prj.dir/llist_lib/llist.c.s"
-	/bin/x86_64-linux-gnu-gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/furkan/Cpp_workout/llist_test/llist_lib/llist.c -o CMakeFiles/linked_list_prj.dir/llist_lib/llist.c.s
+CMakeFiles/linked_list_prj.dir/linked_list_lib/src/linked_list.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/linked_list_prj.dir/linked_list_lib/src/linked_list.c.s"
+	/bin/x86_64-linux-gnu-gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/furkan/Cpp_workout/llist_test/linked_list_lib/src/linked_list.c -o CMakeFiles/linked_list_prj.dir/linked_list_lib/src/linked_list.c.s
 
 CMakeFiles/linked_list_prj.dir/tests/test1.cpp.o: CMakeFiles/linked_list_prj.dir/flags.make
 CMakeFiles/linked_list_prj.dir/tests/test1.cpp.o: ../tests/test1.cpp
@@ -96,9 +96,22 @@ CMakeFiles/linked_list_prj.dir/tests/test1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linked_list_prj.dir/tests/test1.cpp.s"
 	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/furkan/Cpp_workout/llist_test/tests/test1.cpp -o CMakeFiles/linked_list_prj.dir/tests/test1.cpp.s
 
+CMakeFiles/linked_list_prj.dir/tests/test2.cpp.o: CMakeFiles/linked_list_prj.dir/flags.make
+CMakeFiles/linked_list_prj.dir/tests/test2.cpp.o: ../tests/test2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/furkan/Cpp_workout/llist_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/linked_list_prj.dir/tests/test2.cpp.o"
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linked_list_prj.dir/tests/test2.cpp.o -c /home/furkan/Cpp_workout/llist_test/tests/test2.cpp
+
+CMakeFiles/linked_list_prj.dir/tests/test2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linked_list_prj.dir/tests/test2.cpp.i"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/furkan/Cpp_workout/llist_test/tests/test2.cpp > CMakeFiles/linked_list_prj.dir/tests/test2.cpp.i
+
+CMakeFiles/linked_list_prj.dir/tests/test2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linked_list_prj.dir/tests/test2.cpp.s"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/furkan/Cpp_workout/llist_test/tests/test2.cpp -o CMakeFiles/linked_list_prj.dir/tests/test2.cpp.s
+
 CMakeFiles/linked_list_prj.dir/gtest_gmock/gmock-gtest-all.cc.o: CMakeFiles/linked_list_prj.dir/flags.make
 CMakeFiles/linked_list_prj.dir/gtest_gmock/gmock-gtest-all.cc.o: ../gtest_gmock/gmock-gtest-all.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/furkan/Cpp_workout/llist_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/linked_list_prj.dir/gtest_gmock/gmock-gtest-all.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/furkan/Cpp_workout/llist_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/linked_list_prj.dir/gtest_gmock/gmock-gtest-all.cc.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linked_list_prj.dir/gtest_gmock/gmock-gtest-all.cc.o -c /home/furkan/Cpp_workout/llist_test/gtest_gmock/gmock-gtest-all.cc
 
 CMakeFiles/linked_list_prj.dir/gtest_gmock/gmock-gtest-all.cc.i: cmake_force
@@ -112,20 +125,22 @@ CMakeFiles/linked_list_prj.dir/gtest_gmock/gmock-gtest-all.cc.s: cmake_force
 # Object files for target linked_list_prj
 linked_list_prj_OBJECTS = \
 "CMakeFiles/linked_list_prj.dir/main.cpp.o" \
-"CMakeFiles/linked_list_prj.dir/llist_lib/llist.c.o" \
+"CMakeFiles/linked_list_prj.dir/linked_list_lib/src/linked_list.c.o" \
 "CMakeFiles/linked_list_prj.dir/tests/test1.cpp.o" \
+"CMakeFiles/linked_list_prj.dir/tests/test2.cpp.o" \
 "CMakeFiles/linked_list_prj.dir/gtest_gmock/gmock-gtest-all.cc.o"
 
 # External object files for target linked_list_prj
 linked_list_prj_EXTERNAL_OBJECTS =
 
 linked_list_prj: CMakeFiles/linked_list_prj.dir/main.cpp.o
-linked_list_prj: CMakeFiles/linked_list_prj.dir/llist_lib/llist.c.o
+linked_list_prj: CMakeFiles/linked_list_prj.dir/linked_list_lib/src/linked_list.c.o
 linked_list_prj: CMakeFiles/linked_list_prj.dir/tests/test1.cpp.o
+linked_list_prj: CMakeFiles/linked_list_prj.dir/tests/test2.cpp.o
 linked_list_prj: CMakeFiles/linked_list_prj.dir/gtest_gmock/gmock-gtest-all.cc.o
 linked_list_prj: CMakeFiles/linked_list_prj.dir/build.make
 linked_list_prj: CMakeFiles/linked_list_prj.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/furkan/Cpp_workout/llist_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable linked_list_prj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/furkan/Cpp_workout/llist_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable linked_list_prj"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/linked_list_prj.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

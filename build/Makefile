@@ -150,32 +150,32 @@ gtest_gmock/gmock-gtest-all.cc.s:
 	$(MAKE) -f CMakeFiles/linked_list_prj.dir/build.make CMakeFiles/linked_list_prj.dir/gtest_gmock/gmock-gtest-all.cc.s
 .PHONY : gtest_gmock/gmock-gtest-all.cc.s
 
-llist_lib/llist.o: llist_lib/llist.c.o
+linked_list_lib/src/linked_list.o: linked_list_lib/src/linked_list.c.o
 
-.PHONY : llist_lib/llist.o
+.PHONY : linked_list_lib/src/linked_list.o
 
 # target to build an object file
-llist_lib/llist.c.o:
-	$(MAKE) -f CMakeFiles/linked_list_prj.dir/build.make CMakeFiles/linked_list_prj.dir/llist_lib/llist.c.o
-.PHONY : llist_lib/llist.c.o
+linked_list_lib/src/linked_list.c.o:
+	$(MAKE) -f CMakeFiles/linked_list_prj.dir/build.make CMakeFiles/linked_list_prj.dir/linked_list_lib/src/linked_list.c.o
+.PHONY : linked_list_lib/src/linked_list.c.o
 
-llist_lib/llist.i: llist_lib/llist.c.i
+linked_list_lib/src/linked_list.i: linked_list_lib/src/linked_list.c.i
 
-.PHONY : llist_lib/llist.i
+.PHONY : linked_list_lib/src/linked_list.i
 
 # target to preprocess a source file
-llist_lib/llist.c.i:
-	$(MAKE) -f CMakeFiles/linked_list_prj.dir/build.make CMakeFiles/linked_list_prj.dir/llist_lib/llist.c.i
-.PHONY : llist_lib/llist.c.i
+linked_list_lib/src/linked_list.c.i:
+	$(MAKE) -f CMakeFiles/linked_list_prj.dir/build.make CMakeFiles/linked_list_prj.dir/linked_list_lib/src/linked_list.c.i
+.PHONY : linked_list_lib/src/linked_list.c.i
 
-llist_lib/llist.s: llist_lib/llist.c.s
+linked_list_lib/src/linked_list.s: linked_list_lib/src/linked_list.c.s
 
-.PHONY : llist_lib/llist.s
+.PHONY : linked_list_lib/src/linked_list.s
 
 # target to generate assembly for a file
-llist_lib/llist.c.s:
-	$(MAKE) -f CMakeFiles/linked_list_prj.dir/build.make CMakeFiles/linked_list_prj.dir/llist_lib/llist.c.s
-.PHONY : llist_lib/llist.c.s
+linked_list_lib/src/linked_list.c.s:
+	$(MAKE) -f CMakeFiles/linked_list_prj.dir/build.make CMakeFiles/linked_list_prj.dir/linked_list_lib/src/linked_list.c.s
+.PHONY : linked_list_lib/src/linked_list.c.s
 
 main.o: main.cpp.o
 
@@ -231,6 +231,33 @@ tests/test1.cpp.s:
 	$(MAKE) -f CMakeFiles/linked_list_prj.dir/build.make CMakeFiles/linked_list_prj.dir/tests/test1.cpp.s
 .PHONY : tests/test1.cpp.s
 
+tests/test2.o: tests/test2.cpp.o
+
+.PHONY : tests/test2.o
+
+# target to build an object file
+tests/test2.cpp.o:
+	$(MAKE) -f CMakeFiles/linked_list_prj.dir/build.make CMakeFiles/linked_list_prj.dir/tests/test2.cpp.o
+.PHONY : tests/test2.cpp.o
+
+tests/test2.i: tests/test2.cpp.i
+
+.PHONY : tests/test2.i
+
+# target to preprocess a source file
+tests/test2.cpp.i:
+	$(MAKE) -f CMakeFiles/linked_list_prj.dir/build.make CMakeFiles/linked_list_prj.dir/tests/test2.cpp.i
+.PHONY : tests/test2.cpp.i
+
+tests/test2.s: tests/test2.cpp.s
+
+.PHONY : tests/test2.s
+
+# target to generate assembly for a file
+tests/test2.cpp.s:
+	$(MAKE) -f CMakeFiles/linked_list_prj.dir/build.make CMakeFiles/linked_list_prj.dir/tests/test2.cpp.s
+.PHONY : tests/test2.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -243,15 +270,18 @@ help:
 	@echo "... gtest_gmock/gmock-gtest-all.o"
 	@echo "... gtest_gmock/gmock-gtest-all.i"
 	@echo "... gtest_gmock/gmock-gtest-all.s"
-	@echo "... llist_lib/llist.o"
-	@echo "... llist_lib/llist.i"
-	@echo "... llist_lib/llist.s"
+	@echo "... linked_list_lib/src/linked_list.o"
+	@echo "... linked_list_lib/src/linked_list.i"
+	@echo "... linked_list_lib/src/linked_list.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... tests/test1.o"
 	@echo "... tests/test1.i"
 	@echo "... tests/test1.s"
+	@echo "... tests/test2.o"
+	@echo "... tests/test2.i"
+	@echo "... tests/test2.s"
 .PHONY : help
 
 

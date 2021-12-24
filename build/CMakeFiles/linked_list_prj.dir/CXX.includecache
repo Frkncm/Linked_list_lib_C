@@ -178,11 +178,11 @@ iosfwd
 vector
 -
 
-../llist_lib/llist.h
+../linked_list_lib/inc/linked_list.h
 
 /home/furkan/Cpp_workout/llist_test/tests/test1.cpp
 gtest/gtest.h
 -
-llist.h
-/home/furkan/Cpp_workout/llist_test/tests/llist.h
+linked_list.h
+/home/furkan/Cpp_workout/llist_test/tests/linked_list.h
 
