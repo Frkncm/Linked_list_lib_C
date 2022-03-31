@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include "linked_list.h"
 
+/* After creating a list, we don't need to call
+   this function again. The list struct is only 
+   used for holding additional size info of the 
+   list */
 list *list_create(int value, void *next_node)
 {
    list *temp_list = (list *)malloc(sizeof(list));
@@ -11,6 +15,8 @@ list *list_create(int value, void *next_node)
    return temp_list;
 }
 
+/* Node create will called continuously as we
+   add new data. */
 node *node_create(int value, void *next_node)
 {
    node *list = (node *)malloc(sizeof(node));
@@ -20,21 +26,33 @@ node *node_create(int value, void *next_node)
    return list;
 }
 
+/* Push back can be directly used even we didn't 
+   create a list previously (it will create if the 
+   list is empty). Since the address will be added 
+   to the list, double pointer is needed. This design
+   can be converted to the function returning the list
+   address but, this one seems more convinient for now.  */
 void list_pushBack(list **lst, int value)
 {
    if ((*lst) == NULL)
    {
+      /* If the list has not created, we should
+      construct it at first before jumping into
+      the node adding parts. */
       (*lst) = list_create(value, NULL);
    }
    else
    {
       node *current_node = (*lst)->list_node;
 
+      /* Check the node where the next one is NULL */
       while (current_node->next != NULL)
       {
          current_node = current_node->next;
       }
-
+      
+      /* Now we find the empty node, so we can 
+      constract that node */
       current_node->next = node_create(value, NULL);
       current_node->next->next = NULL;
       (*lst)->size++;
@@ -85,18 +103,16 @@ int list_popBack(list **lst)
    return temp;
 }
 
-static node *get_node(list *lst, int index)
+static node *get_node(list *lst, unsigned int index)
 {
    // We need to create a linear search mechanism
 
    if (lst->size < index)
       return NULL;
 
-   int i = 0;
-
    node *current_node = (lst)->list_node;
 
-   for (i = 0; i < index - 1; i++)
+   for (int i = 0; i < index; i++)
    {
       current_node = current_node->next;
    }
@@ -186,6 +202,8 @@ void list_free(list **lst)
       (*lst)->list_node = next;
    }
 
+   free(*lst);
+   
    *lst = NULL;
 }
 

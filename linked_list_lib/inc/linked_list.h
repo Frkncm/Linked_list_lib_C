@@ -3,19 +3,23 @@
 
 #include "stdbool.h"
 
-// Interface
+/* Interface */
 
 #define CREATE_LIST(list_name) \
     list *list_name = NULL;
 
 typedef struct element node; // Forward decleration
 
+/* element will be presenting the each node on the
+   linked list */
 struct element
 {
     int value;
     node *next;
 };
 
+/* list struct will be the higher level type which is
+   holding the size of the linked list and node addres */
 typedef struct list
 {
     node *list_node;

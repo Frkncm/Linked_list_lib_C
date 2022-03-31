@@ -59,7 +59,7 @@ TEST_F(llist_test2, check_list_get_index)
     list_pushBack(&l_list, 2);
     list_pushBack(&l_list, 11);
 
-    EXPECT_EQ(list_get(l_list, 3), 11);
+    EXPECT_EQ(list_get(l_list, 2), 11);
 }
 
 TEST_F(llist_test2, check_insert_after_index)
@@ -68,9 +68,9 @@ TEST_F(llist_test2, check_insert_after_index)
     list_pushBack(&l_list, 2);
     list_pushBack(&l_list, 11);
 
-    EXPECT_TRUE(list_insertAfterIndex(l_list, 55, 3));
+    EXPECT_TRUE(list_insertAfterIndex(l_list, 55, 2));
 
-    EXPECT_EQ(list_get(l_list, 4), 55);
+    EXPECT_EQ(list_get(l_list, 3), 55);
 }
 
 TEST_F(llist_test2, check_insert_after_index_weirdvalues)
@@ -90,11 +90,30 @@ TEST_F(llist_test2, check_push_front)
 
     EXPECT_TRUE(list_pushFront(&l_list, 66));
 
-    EXPECT_EQ(list_get(l_list, 1), 66);
-    EXPECT_EQ(list_get(l_list, 2), 5);
-    EXPECT_EQ(list_get(l_list, 3), 2);
-    EXPECT_EQ(list_get(l_list, 4), 11);
+    EXPECT_EQ(list_get(l_list, 0), 66);
+    EXPECT_EQ(list_get(l_list, 1), 5);
+    EXPECT_EQ(list_get(l_list, 2), 2);
+    EXPECT_EQ(list_get(l_list, 3), 11);
 
     EXPECT_TRUE(list_get(l_list, 5) == -1);
+
+}
+
+TEST_F(llist_test2, check_index_based_read)
+{
+    list_pushBack(&l_list, 5);
+    list_pushBack(&l_list, 2);
+    list_pushBack(&l_list, 11);
+    list_pushBack(&l_list, 65);
+    list_pushBack(&l_list, 12);
+
+    EXPECT_TRUE(list_pushFront(&l_list, 66));
+
+    EXPECT_EQ(list_get(l_list, 5), 12);
+    EXPECT_EQ(list_get(l_list, 4), 65);
+    EXPECT_EQ(list_get(l_list, 3), 11);
+    EXPECT_EQ(list_get(l_list, 2), 2);
+    EXPECT_EQ(list_get(l_list, 1), 5);
+    EXPECT_EQ(list_get(l_list, 0), 66);
 
 }

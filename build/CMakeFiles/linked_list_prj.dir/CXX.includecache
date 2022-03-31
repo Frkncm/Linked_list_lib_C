@@ -182,7 +182,7 @@ vector
 stdbool.h
 ../linked_list_lib/inc/stdbool.h
 
-/home/furkan/Cpp_workout/llist_test/tests/test2.cpp
+/home/furkan/Cpp_workout/llist_test/tests/test1.cpp
 gtest/gtest.h
 -
 linked_list.h

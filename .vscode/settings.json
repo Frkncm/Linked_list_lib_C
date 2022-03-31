@@ -16,6 +16,8 @@
         "variant": "c",
         "llist.h": "c",
         "list": "cpp",
-        "linked_list.h": "c"
+        "linked_list.h": "c",
+        "string": "cpp",
+        "string_view": "cpp"
     }
 }
