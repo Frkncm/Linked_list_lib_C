@@ -19,11 +19,11 @@ list *list_create(int value, void *next_node)
    add new data. */
 node *node_create(int value, void *next_node)
 {
-   node *list = (node *)malloc(sizeof(node));
+   node *nd = (node *)malloc(sizeof(node));
 
-   list->value = value;
-   list->next = (node *)next_node;
-   return list;
+   nd->value = value;
+   nd->next = (node *)next_node;
+   return nd;
 }
 
 /* Push back can be directly used even we didn't 
@@ -54,7 +54,6 @@ void list_pushBack(list **lst, int value)
       /* Now we find the empty node, so we can 
       constract that node */
       current_node->next = node_create(value, NULL);
-      current_node->next->next = NULL;
       (*lst)->size++;
    }
 }
@@ -202,8 +201,10 @@ void list_free(list **lst)
       (*lst)->list_node = next;
    }
 
+   /* Free the address allocated for lst.
+      otherwise this will cause memory leak. */
    free(*lst);
-   
+
    *lst = NULL;
 }
 
