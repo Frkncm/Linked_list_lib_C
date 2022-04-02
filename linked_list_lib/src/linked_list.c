@@ -8,9 +8,12 @@
    list */
 list *list_create(int value, void *next_node)
 {
+   /* List needs to be created for one time. */
    list *temp_list = (list *)malloc(sizeof(list));
+   /* After allocating memory for top list data
+      we need to allocate memory for node as well. */
    temp_list->list_node = node_create(value, next_node);
-
+   /* Size is 1 since we have only created one node */
    temp_list->size = 1;
    return temp_list;
 }

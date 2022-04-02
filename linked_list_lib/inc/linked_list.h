@@ -19,7 +19,7 @@ struct element
 };
 
 /* list struct will be the higher level type which is
-   holding the size of the linked list and node addres */
+   holding the size counting the node size in a list */
 typedef struct list
 {
     node *list_node;
