@@ -26,8 +26,6 @@ typedef struct list
     int size;
 } list;
 
-void *list_ctor(list **lst);
-
 list *list_create(int value, void *next_node);
 
 node *node_create(int value, void *next_node);
